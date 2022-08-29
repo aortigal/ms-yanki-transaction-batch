@@ -17,6 +17,6 @@ public class Transaction extends Audit {
 
     private String senderPhone;
 
-    private float mont;
+    private float amount;
 
 }
