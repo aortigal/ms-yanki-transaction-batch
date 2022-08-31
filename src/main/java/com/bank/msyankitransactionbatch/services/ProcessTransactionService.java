@@ -1,9 +1,8 @@
 package com.bank.msyankitransactionbatch.services;
 
-import com.bank.msyankitransactionbatch.models.utils.DataEvent;
-import com.bank.msyankitransactionbatch.models.documents.Transaction;
+import com.fasterxml.jackson.core.JsonProcessingException;
 
 public interface ProcessTransactionService {
 
-    void process(DataEvent<Transaction> dataEvent);
+    void process(String message) throws JsonProcessingException;
 }

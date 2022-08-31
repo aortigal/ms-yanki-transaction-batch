@@ -5,6 +5,8 @@ import lombok.Data;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
+import java.math.BigDecimal;
+
 
 @Data
 @Document(collection = "transactions")
@@ -17,6 +19,6 @@ public class Transaction extends Audit {
 
     private String senderPhone;
 
-    private float amount;
+    private BigDecimal amount;
 
 }
